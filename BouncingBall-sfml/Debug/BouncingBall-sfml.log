@@ -1,3 +1,4 @@
-﻿  Ball.cpp
+﻿  MainLoop.cpp
+d:\krzysiakowe\projekty\bouncingball-sfml\bouncingball-sfml\mainloop.cpp(18): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   BouncingBall-sfml.vcxproj -> D:\Krzysiakowe\Projekty\BouncingBall-sfml\Debug\BouncingBall-sfml.exe
   BouncingBall-sfml.vcxproj -> D:\Krzysiakowe\Projekty\BouncingBall-sfml\Debug\BouncingBall-sfml.pdb (Partial PDB)

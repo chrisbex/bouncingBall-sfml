@@ -52,7 +52,7 @@ void Ball::update(sf::RenderWindow &wind, sf::Vector2i boundaries)
 	onMouseDrag(wind);
 	if (checkCollisionWithBoundaries(boundaries) == BOTTOM) {
 		_deltaY = _deltaY * -0.5f;
-		_position = sf::Vector2f(_position.x, _position.y + _deltaY * 2 - _size / 2);
+		_position = sf::Vector2f(_position.x, boundaries.y - _size);
 	}
 	else if (checkCollisionWithBoundaries(boundaries) == LEFT) printf("%s\n", "LEFT Collision detected...");
 	else if (checkCollisionWithBoundaries(boundaries) == RIGHT) printf("%s\n", "RIGHT Collision detected...");
@@ -60,6 +60,6 @@ void Ball::update(sf::RenderWindow &wind, sf::Vector2i boundaries)
 	_shape.setPosition(_position);
 
 	// printf("%f %f \n", _position.x, _position.y);
-	// It must be another function - let leave as it is for now ;-)
+	// It must be in another function - let leave as it is for now ;-)
 	wind.draw(_shape);
 }

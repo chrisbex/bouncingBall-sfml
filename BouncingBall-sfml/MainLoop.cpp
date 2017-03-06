@@ -6,7 +6,7 @@
 
 int main()
 {
-	const int NUMBER_OF_BALLS = 4;
+	const int NUMBER_OF_BALLS = 10;
 	const int SCREEN_WIDTH = 1440;
 	const int SCREEN_HEIGHT = 900;
 
